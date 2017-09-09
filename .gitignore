@@ -16,5 +16,5 @@ hs_err_pid*
 
 *.xml
 *.iml
-/.idea/
 /kik.iml
+/.idea/

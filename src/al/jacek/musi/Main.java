@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Matrix matrix = new Matrix();
 
-        while (matrix.didSomeoneWon() == 0) {
+        while (matrix.didUserWon()== 0) {
 
         }
     }

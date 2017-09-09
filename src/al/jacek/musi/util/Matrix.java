@@ -22,17 +22,34 @@ public class Matrix {
     }
 
     /** TODO WRITE TEST
+     * TODO REWRITE USING wHATEVER BUT NOT ELSE IFs..
      * @return 1 when user 'X' won, 2 when computer using 'O' won
      */
-    public int didSomeoneWon() {
+    public int didUserWon() {
+        /*horizontally*/
         if (matrix2[0] == 1 && matrix2[1] == 1 && matrix2[2] == 1) {
             return 1;
         }else if (matrix2[3] == 1 && matrix2[4] == 1 && matrix2[5] == 1) {
             return 1;
         } else if (matrix2[6] == 1 && matrix2[7] == 1 && matrix2[8] == 1) {
             return 1;
+        }/*vertically*/
+        else if (matrix2[0] == 1 && matrix2[3] == 1 && matrix2[6] == 1) {
+            return 1;
+        }else if (matrix2[1] == 1 && matrix2[4] == 1 && matrix2[7] == 1) {
+            return 1;
+        }else if (matrix2[2] == 1 && matrix2[5] == 1 && matrix2[8] == 1) {
+            return 1;
+        }/*diagonally*/
+        else if (matrix2[0] == 1 && matrix2[4] == 1 && matrix2[8] == 1) {
+            return 1;
+        }else if (matrix2[2] == 1 && matrix2[4] == 1 && matrix2[6] == 1) {
+            return 1;
+        }else if (matrix2[0] == 1 && matrix2[4] == 1 && matrix2[8] == 1) {
+            return 1;
         }
 
+        return 0;
     }
 
 }
